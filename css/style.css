@@ -187,3 +187,51 @@ img { max-width: 100%; height: auto; }
   .btn { display: block; width: 100%; text-align: center; }
   .site-footer { flex-direction: column; align-items: flex-start; text-align: left; }
 }
+
+
+
+
+/* 10. Positioning */
+.badge {
+  position: absolute; top: -12px; right: 20px; background: var(--accent); color: #1e293b;
+  font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 999px;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.4); border: 1px solid #d97706;
+}
+.back-to-top {
+  position: fixed; right: 24px; bottom: 24px; width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--brand); color: #fff; font-size: 1.4rem;
+  text-decoration: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.4);
+  transition: background 0.2s, transform 0.2s;
+}
+.back-to-top:hover { background: var(--brand-dark); color: #fff; transform: translateY(-4px); }
+.skip-link { position: absolute; left: -9999px; top: 0; }
+.skip-link:focus { left: 8px; top: 8px; z-index: 200; background: #fff; color: var(--brand-dark); padding: 12px 20px; border-radius: 6px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 2px solid var(--brand); }
+
+/* 11. Flexbox */
+.card-row { display: flex; flex-wrap: wrap; gap: 24px; }
+.card-row > .card { flex: 1 1 260px; }
+.menu-list { display: flex; flex-wrap: wrap; gap: 24px; }
+.menu-item { flex: 1 1 300px; margin-bottom: 0; }
+.item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.form-row { display: flex; flex-wrap: wrap; gap: 24px; margin-bottom: 24px; }
+.form-row > .field, .form-row > .choice { flex: 1 1 220px; }
+.field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+fieldset.choice { display: flex; flex-direction: column; gap: 12px; margin: 0; border: 1px solid var(--border); border-radius: 6px; padding: 16px; background: #f8fafc; }
+.saved-orders { margin-top: 48px; }
+.table-wrap { overflow-x: auto; margin-bottom: 24px; border-radius: var(--radius); border: 1px solid var(--border); }
+
+/* 12. Responsive */
+img { max-width: 100%; height: auto; }
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  #main { padding: 16px; }
+  .hero { padding: 48px 20px; }
+  .site-header { flex-direction: column; align-items: flex-start; padding: 16px; }
+  .nav-list { flex-wrap: wrap; margin-top: 12px; }
+}
+@media (max-width: 480px) {
+  .nav-list a { padding: 6px 10px; font-size: 0.9rem; }
+  .btn { display: block; width: 100%; text-align: center; }
+  .site-footer { flex-direction: column; align-items: flex-start; text-align: left; }
+}
