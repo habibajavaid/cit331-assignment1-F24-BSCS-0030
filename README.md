@@ -11,8 +11,7 @@ This is built for the CIT331 Web Technology Assignment : 1. This show the upcomi
 
   Student Name : Habiba Javaid 
   Roll No: 24l-BSCS-0030
-
-
+  
   LIVE SITE : https://habibajavaid.github.io/cit331-assignment1-F24-BSCS-0030/
   GIT REOSITORY : https://github.com/habibajavaid/cit331-assignment1-F24-BSCS-0030
   
