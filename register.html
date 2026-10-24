@@ -29,29 +29,29 @@
     <h1>Register for an event</h1>
     <p>Fields marked * are required.</p>
     
-    <form id="register-form" action="#" method="post">
+      <form id="register-form" action="#" method="post">
       <fieldset>
         <legend>Your details</legend>
-        <section class="form-row">
-          <section class="field">
+        <div class="form-row">
+          <div class="field">
             <label for="name">Full name *</label>
-            <input type="text" id="name" name="name" required minlength="3" maxlength="50" placeholder="e.g. Habiba Javaid" autocomplete="name">
-          </section>
-          <section class="field">
+            <input type="text" id="name" name="name" required minlength="3" maxlength="50" placeholder="e.g. Ayesha Khan" autocomplete="name">
+          </div>
+          <div class="field">
             <label for="email">University email *</label>
             <input type="email" id="email" name="email" required placeholder="you@university.edu" autocomplete="email">
-          </section>
-        </section>
-        <section class="field">
+          </div>
+        </div>
+        <div class="field">
           <label for="phone">Mobile number *</label>
           <input type="tel" id="phone" name="phone" required pattern="03[0-9]{9}" title="11 digits starting with 03, for example 03001234567" placeholder="03001234567" autocomplete="tel">
-        </section>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>Your event</legend>
-        <section class="form-row">
-          <section class="field">
+        <div class="form-row">
+          <div class="field">
             <label for="event">Event *</label>
             <select id="event" name="event" required>
               <option value="">Choose an event...</option>
@@ -60,12 +60,12 @@
               <option>Git &amp; GitHub Clinic</option>
               <option>Hack Night</option>
             </select>
-          </section>
-          <section class="field">
+          </div>
+          <div class="field">
             <label for="guests">Number of guests *</label>
             <input type="number" id="guests" name="guests" required min="0" max="5" value="0">
-          </section>
-        </section>
+          </div>
+        </div>
         
         <fieldset class="choice">
           <legend>How did you hear about us?</legend>
@@ -83,7 +83,7 @@
     <section class="saved-orders">
       <h2>Saved registrations</h2>
       <p>These are stored in this browser only.</p>
-      <section class="table-wrap">
+      <div class="table-wrap">
         <table>
           <caption>Registrations from this browser</caption>
           <thead>
@@ -97,7 +97,7 @@
           </thead>
           <tbody id="registrations-body"></tbody>
         </table>
-      </section>
+    </div>
       <button type="button" id="clear-registrations" class="btn btn-secondary">Clear all registrations</button>
     </section>
   </main>
