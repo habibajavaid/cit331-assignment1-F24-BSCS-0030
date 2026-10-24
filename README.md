@@ -14,6 +14,6 @@ This is built for the CIT331 Web Technology Assignment : 1. This show the upcomi
 
 
   LIVE SITE : 
-  GIT REOSITORY :
+  GIT REOSITORY : https://github.com/habibajavaid/cit331-assignment1-F24-BSCS-0030
   
 
